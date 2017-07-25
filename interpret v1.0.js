@@ -185,8 +185,8 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
 }
 
 document.getElementById('interB').onclick = (event) => {
-  var text = prompt('Введите текст программы', '');     //ввод текста программы
-  var contentstack = prompt('Введите начальное содержимое стека', '');//и стека
+  var text = inputD.value;                 //получение текстов из полей ввода
+  var contentstack = inputS.value;
   
   var tokens = [];
   var stack = [];
