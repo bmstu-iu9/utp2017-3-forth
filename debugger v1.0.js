@@ -43,6 +43,18 @@ var error = false;
 var nos = 0;
 var maxnos = 0;
 var index = 0;
+var values = {};
+
+var math = {};
+math.E = 2.718;
+math.Tau = 6.283;
+math.Pi = 3.142;
+math.Log2E = 1.443;
+math.Log10E = 0.434;
+math.Ln2 = 0.693;
+math.Ln10 = 2.302;
+math.Sqrt2 = 1.414;
+math.Sqrt3 = 1.732;
 
 document.getElementById('parseB').onclick = (event) => {
   tokens = [];
@@ -228,6 +240,9 @@ document.getElementById('interB').onclick = (event) => {
               index = findEnd( index + 1, tokens );
               nos = numbers[index];
               break;
+            case 'var':
+              values[tokens[index+1] = tokens[index+2];
+              break;
             case 'if':
               x = stack.shift();
               if ( !x ) {
@@ -247,6 +262,10 @@ document.getElementById('interB').onclick = (event) => {
                 returnStack.push(index);
                 index = dictionary[str];
                 nos = numbers[index+1] - 1;
+              } else if ( str in math ) {
+                st.unshift(math[str]);
+              } else if ( str in values ) {
+                st.unshift(values[str]);
               } else {
                 error = true;        //флаг, сигнализирующий об ошибочном вводе
               }
