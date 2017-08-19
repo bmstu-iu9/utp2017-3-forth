@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>'Save As' test</title>
+<meta charset="utf-8">
+</head>
+<body>
+<button id="bttn">Надавите, чтобы получить текстовый файл</button><br><br>
+<input id="fileInput" type="file" size="50" onchange="processFiles(this.files)"><br>
+<textarea id="code"></textarea>
+<script>
+function downloadURI(uri, name) {
+  var link = document.createElement("a");
+  link.download = name;
+  link.href = uri;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  delete link;
+}
+
+
+bttn.onclick = function() {
+	var content = document.getElementById('code').value;
+	var data = encodeURI(content);
+	var url = `data:text/plain;charset=utf-8,${data}`;
+	downloadURI(url, 'test.txt');
+};
+
+function processFiles(files) {
+    var file = files[0];
+    var reader = new FileReader();
+    reader.onload = function (e) {
+		// Когда это событие активируется, данные готовы.
+		// Вставляем их в страницу в элемент <div>
+		var output = document.getElementById("code");   
+		output.value = e.target.result;
+	};
+	reader.readAsText(file);
+}
+</script>
+</body>
+</html>
