@@ -168,10 +168,10 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
           index = retst.pop();
           break;
         case 'var':
-          values[tokens[index+1] = tokens[index+2];
+          values[tokens[index+1]] = tokens[index+2];
           break;
         default:
-          if ( str in dict ) {
+          if (str in dict) {
             retst.push(index);
             index = dict[str];
           } else if (str in math) {
