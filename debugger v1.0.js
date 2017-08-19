@@ -241,7 +241,7 @@ document.getElementById('interB').onclick = (event) => {
               nos = numbers[index];
               break;
             case 'var':
-              values[tokens[index+1] = tokens[index+2];
+              values[tokens[index+1]] = tokens[index+2];
               break;
             case 'if':
               x = stack.shift();
@@ -258,7 +258,7 @@ document.getElementById('interB').onclick = (event) => {
               nos = numbers[index];
               break;
             default:
-              if ( str in dictionary ) {
+              if (str in dictionary) {
                 returnStack.push(index);
                 index = dictionary[str];
                 nos = numbers[index+1] - 1;
