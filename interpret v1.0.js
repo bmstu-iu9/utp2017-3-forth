@@ -192,7 +192,7 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
 }
 
 document.getElementById('interB').onclick = (event) => {
-  var text = inputD.value;                 //получение текстов из полей ввода
+  var text = editor.getValue();                 //получение текстов из полей ввода
   var contentstack = inputS.value;
   
   var tokens = [];
