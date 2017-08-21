@@ -168,10 +168,10 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
           index = retst.pop();
           break;
         case 'var':
-          values[tokens[index+1] = tokens[index+2];
+          values[tokens[index+1]] = tokens[index+2];
           break;
         default:
-          if ( str in dict ) {
+          if (str in dict) {
             retst.push(index);
             index = dict[str];
           } else if (str in math) {
@@ -192,7 +192,7 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
 }
 
 document.getElementById('interB').onclick = (event) => {
-  var text = inputD.value;                 //получение текстов из полей ввода
+  var text = editor.getValue();                 //получение текстов из полей ввода
   var contentstack = inputS.value;
   
   var tokens = [];
