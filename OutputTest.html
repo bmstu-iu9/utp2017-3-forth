@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>OutputTest</title>
-    <style>
-        textarea {
-            resize: none; /* Убираем уголок ресайза */
-        }
-    </style>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  <!-- Подключаем jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> <!-- Подключаем jQuery UI -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#tabs").tabs(); // Подключаем виджет tabs
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="TabsStyle.css" />
 </head>
 <body>
-<textarea id="output" rows="15" cols="45" readonly  wrap="off"></textarea>
+<div id="tabs">
+    <ul>
+        <li><a href="#constantsTab">Константы</a></li>
+        <li><a href="#variablesTab">Переменные</a></li>
+        <li><a href="#functionsTab">Функции</a></li>
+    </ul>
+    <div id="constantsTab">
+    </div>
+    <div id="variablesTab">
+    </div>
+    <div id="functionsTab">
+    </div>
+</div>
 <script src="getOutput.js"></script>
 </body>
 </html>
