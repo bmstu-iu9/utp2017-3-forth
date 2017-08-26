@@ -1,27 +1,5 @@
 function styles() {
-        if(document.body.className == 'white') {
-            document.body.className = 'literature';
-            document.body.style.backgroundImage = 'url(images/literature/background.jpg)';
-            document.getElementById('window').style.backgroundImage = 'url(images/literature/debugger_background.jpg)';
-            document.getElementById('s_input').style.backgroundImage = 'url(images/literature/input_background.png)';
-            document.getElementById('s_dic_func').style.backgroundImage = 'url(images/literature/dic_func_background.png)';
-            document.getElementById('s_default').style.backgroundImage = 'url(images/literature/default_background.png)';
-            document.getElementById('s_output').style.backgroundImage = 'url(images/literature/output_background.png)';
-            document.getElementById('s_debug').style.backgroundImage = 'url(images/literature/debug_background.png)';
-            document.getElementById('s_debug_output').style.backgroundImage = 'url(images/literature/debug_output_background.png)';
-            document.getElementById('style').src = 'images/literature/styles.png';
-            document.getElementById('save_to_file').src = 'images/literature/save_to_file.png';
-            document.getElementById('open_from_file').src = 'images/literature/open_from_file.png';
-            document.getElementById('save').src = 'images/literature/save.png';
-            document.getElementById('back').src = 'images/literature/back.png';
-            document.getElementById('forth').src = 'images/literature/forth.png';
-            document.getElementById('run').src = 'images/literature/run.png';
-            document.getElementById('debug').src = 'images/literature/debug.png';
-            document.getElementById('dictionary').src = 'images/literature/dictionary.png';
-            document.getElementById('functions').src = 'images/literature/functions.png';
-            document.getElementById('go').src = 'images/literature/go.png';
-            document.getElementById('exit').src = 'images/literature/exit.png';
-        } else if(document.body.className == 'literature') {
+        if(document.body.className == 'ubuntu') {
             document.body.className = 'matrix';
             document.body.style.backgroundImage = 'url(images/matrix/background.jpg)';
             document.getElementById('window').style.backgroundImage = 'url(images/matrix/debugger_background.jpg)';
@@ -44,6 +22,28 @@ function styles() {
             document.getElementById('go').src = 'images/matrix/go.png';
             document.getElementById('exit').src = 'images/matrix/exit.png';
         } else if(document.body.className == 'matrix') {
+            document.body.className = 'literature';
+            document.body.style.backgroundImage = 'url(images/literature/background.jpg)';
+            document.getElementById('window').style.backgroundImage = 'url(images/literature/debugger_background.jpg)';
+            document.getElementById('s_input').style.backgroundImage = 'url(images/literature/input_background.png)';
+            document.getElementById('s_dic_func').style.backgroundImage = 'url(images/literature/dic_func_background.png)';
+            document.getElementById('s_default').style.backgroundImage = 'url(images/literature/default_background.png)';
+            document.getElementById('s_output').style.backgroundImage = 'url(images/literature/output_background.png)';
+            document.getElementById('s_debug').style.backgroundImage = 'url(images/literature/debug_background.png)';
+            document.getElementById('s_debug_output').style.backgroundImage = 'url(images/literature/debug_output_background.png)';
+            document.getElementById('style').src = 'images/literature/styles.png';
+            document.getElementById('save_to_file').src = 'images/literature/save_to_file.png';
+            document.getElementById('open_from_file').src = 'images/literature/open_from_file.png';
+            document.getElementById('save').src = 'images/literature/save.png';
+            document.getElementById('back').src = 'images/literature/back.png';
+            document.getElementById('forth').src = 'images/literature/forth.png';
+            document.getElementById('run').src = 'images/literature/run.png';
+            document.getElementById('debug').src = 'images/literature/debug.png';
+            document.getElementById('dictionary').src = 'images/literature/dictionary.png';
+            document.getElementById('functions').src = 'images/literature/functions.png';
+            document.getElementById('go').src = 'images/literature/go.png';
+            document.getElementById('exit').src = 'images/literature/exit.png';
+        } else if(document.body.className == 'literature') {
             document.body.className = 'nature';
             document.body.style.backgroundImage = 'url(images/nature/background.jpg)';
             document.getElementById('window').style.backgroundImage = 'url(images/nature/debugger_background.jpg)';
@@ -66,28 +66,6 @@ function styles() {
             document.getElementById('go').src = 'images/nature/go.png';
             document.getElementById('exit').src = 'images/nature/exit.png';
         } else if(document.body.className == 'nature') {
-            document.body.className = 'ubuntu';
-            document.body.style.backgroundImage = 'url(images/ubuntu/background.jpg)';
-            document.getElementById('window').style.backgroundImage = 'url(images/ubuntu/debugger_background.jpg)';
-            document.getElementById('s_input').style.backgroundImage = 'url(images/ubuntu/input_background.png)';
-            document.getElementById('s_dic_func').style.backgroundImage = 'url(images/ubuntu/dic_func_background.png)';
-            document.getElementById('s_default').style.backgroundImage = 'url(images/ubuntu/default_background.png)';
-            document.getElementById('s_output').style.backgroundImage = 'url(images/ubuntu/output_background.png)';
-            document.getElementById('s_debug').style.backgroundImage = 'url(images/ubuntu/debug_background.png)';
-            document.getElementById('s_debug_output').style.backgroundImage = 'url(images/ubuntu/debug_output_background.png)';
-            document.getElementById('style').src = 'images/ubuntu/styles.png';
-            document.getElementById('save_to_file').src = 'images/ubuntu/save_to_file.png';
-            document.getElementById('open_from_file').src = 'images/ubuntu/open_from_file.png';
-            document.getElementById('save').src = 'images/ubuntu/save.png';
-            document.getElementById('back').src = 'images/ubuntu/back.png';
-            document.getElementById('forth').src = 'images/ubuntu/forth.png';
-            document.getElementById('run').src = 'images/ubuntu/run.png';
-            document.getElementById('debug').src = 'images/ubuntu/debug.png';
-            document.getElementById('dictionary').src = 'images/ubuntu/dictionary.png';
-            document.getElementById('functions').src = 'images/ubuntu/functions.png';
-            document.getElementById('go').src = 'images/ubuntu/go.png';
-            document.getElementById('exit').src = 'images/ubuntu/exit.png';
-        } else {
             document.body.className = 'white';
             document.body.style.backgroundImage = 'url(images/white/background.jpg)';
             document.getElementById('window').style.backgroundImage = 'url(images/white/debugger_background.jpg)';
@@ -109,5 +87,27 @@ function styles() {
             document.getElementById('functions').src = 'images/white/functions.png';
             document.getElementById('go').src = 'images/white/go.png';
             document.getElementById('exit').src = 'images/white/exit.png';
+        } else {
+            document.body.className = 'ubuntu';
+            document.body.style.backgroundImage = 'url(images/ubuntu/background.jpg)';
+            document.getElementById('window').style.backgroundImage = 'url(images/ubuntu/debugger_background.jpg)';
+            document.getElementById('s_input').style.backgroundImage = 'url(images/ubuntu/input_background.png)';
+            document.getElementById('s_dic_func').style.backgroundImage = 'url(images/ubuntu/dic_func_background.png)';
+            document.getElementById('s_default').style.backgroundImage = 'url(images/ubuntu/default_background.png)';
+            document.getElementById('s_output').style.backgroundImage = 'url(images/ubuntu/output_background.png)';
+            document.getElementById('s_debug').style.backgroundImage = 'url(images/ubuntu/debug_background.png)';
+            document.getElementById('s_debug_output').style.backgroundImage = 'url(images/ubuntu/debug_output_background.png)';
+            document.getElementById('style').src = 'images/ubuntu/styles.png';
+            document.getElementById('save_to_file').src = 'images/ubuntu/save_to_file.png';
+            document.getElementById('open_from_file').src = 'images/ubuntu/open_from_file.png';
+            document.getElementById('save').src = 'images/ubuntu/save.png';
+            document.getElementById('back').src = 'images/ubuntu/back.png';
+            document.getElementById('forth').src = 'images/ubuntu/forth.png';
+            document.getElementById('run').src = 'images/ubuntu/run.png';
+            document.getElementById('debug').src = 'images/ubuntu/debug.png';
+            document.getElementById('dictionary').src = 'images/ubuntu/dictionary.png';
+            document.getElementById('functions').src = 'images/ubuntu/functions.png';
+            document.getElementById('go').src = 'images/ubuntu/go.png';
+            document.getElementById('exit').src = 'images/ubuntu/exit.png';
         }
 }
