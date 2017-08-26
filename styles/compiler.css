@@ -1,0 +1,144 @@
+body {
+	background-image: url(../images/white/background.jpg);
+	background-size: cover;
+}
+
+/*div {
+	border: 1px solid white;
+}*/
+
+/*.header {
+	text-align: center;
+	padding-bottom: 5px;
+}*/
+
+.toolbox1 button {
+	width: 11%;
+	margin-right: 1%;
+}
+
+.toolbox2 button {
+	width: 49%;
+}
+
+.buttons img {
+	width: 100%;
+	height: 100%;
+}
+
+.toolbox1 {
+	float: left;
+	width: 65%;
+	box-sizing: border-box;
+}
+
+.buttons {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.buttons button {
+	border: none;
+	padding: 0px;
+	background-color: transparent;
+}
+
+.toolbox2 {
+	float: right;
+	width: 35%;
+	box-sizing: border-box;
+}
+
+.toolbox2 .buttons {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+textarea {
+	/*border: 1px solid black;*/
+	border-radius: 5px;
+	border: none;
+	resize: none;
+	background-image: url(../images/white/text_background.png);
+	background-size: cover;
+	background-color: transparent;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.input textarea {
+	/*border: 1px solid black;*/
+	background-image: url(../images/white/input_background.png);
+	width: 65%;
+	height: 300px;
+	float: left;
+}
+
+.dic_func textarea {
+	background-image: url(../images/white/dic_func_background.png);
+	float: right;
+	width: 35%;
+	height: 440px;
+}
+
+.stack textarea {
+	float: left;
+	width: 65%;
+}
+
+.default textarea {
+	background-image: url(../images/white/default_background.png);
+	float: left;
+	height: 50px;
+
+}
+
+.output textarea {
+	background-image: url(../images/white/output_background.png);
+	float: left;
+	height: 90px;
+}
+
+.footer {
+	border-radius: 5px;
+	color: white;
+	float: left;
+	background-color: black;
+	width: 100%;
+}
+
+.footer1 {
+	width: 65%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.footer2 {
+	width: 35%;
+	float: right;
+	box-sizing: border-box;
+}
+
+.footer2 a {
+	color: white;
+}
+
+h3 {
+	margin-left: 2%;
+}
+
+.ps {
+	margin-left: 5%;
+}
+
+.links {
+	margin-left: 10%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
