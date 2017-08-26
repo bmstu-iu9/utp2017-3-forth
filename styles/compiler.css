@@ -1,5 +1,5 @@
 body {
-	background-image: url(../images/page_styles/white/background.jpg);
+	background-image: url(../images/white/background.jpg);
 	background-size: cover;
 }
 
@@ -61,7 +61,7 @@ textarea {
 	border-radius: 5px;
 	border: none;
 	resize: none;
-	background-image: url(../images/page_styles/white/text_background.png);
+	background-image: url(../images/white/text_background.png);
 	background-size: cover;
 	background-color: transparent;
 	outline: none;
@@ -70,14 +70,14 @@ textarea {
 
 .input textarea {
 	/*border: 1px solid black;*/
-	background-image: url(../images/page_styles/white/input_background.png);
+	background-image: url(../images/white/input_background.png);
 	width: 65%;
 	height: 300px;
 	float: left;
 }
 
 .dic_func textarea {
-	background-image: url(../images/page_styles/white/dic_func_background.png);
+	background-image: url(../images/white/dic_func_background.png);
 	float: right;
 	width: 35%;
 	height: 440px;
@@ -89,14 +89,14 @@ textarea {
 }
 
 .default textarea {
-	background-image: url(../images/page_styles/white/default_background.png);
+	background-image: url(../images/white/default_background.png);
 	float: left;
 	height: 50px;
 
 }
 
 .output textarea {
-	background-image: url(../images/page_styles/white/output_background.png);
+	background-image: url(../images/white/output_background.png);
 	float: left;
 	height: 90px;
 }
