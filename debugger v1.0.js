@@ -241,7 +241,12 @@ document.getElementById('interB').onclick = (event) => {
               nos = numbers[index];
               break;
             case 'var':
-              values[tokens[index+1] = tokens[index+2];
+              if ( isNumber( tok[index + 2] ) ) {
+                values[ tok[index+1] ] = Number( tok[index+2] );
+              } else {
+                error = true;
+              }
+              index = index + 2;
               break;
             case 'if':
               x = stack.shift();
