@@ -263,7 +263,7 @@ document.getElementById('interB').onclick = (event) => {
               nos = numbers[index];
               break;
             default:
-              if ( str in dictionary ) {
+              if (str in dictionary) {
                 returnStack.push(index);
                 index = dictionary[str];
                 nos = numbers[index+1] - 1;

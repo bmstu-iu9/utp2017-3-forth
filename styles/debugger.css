@@ -1,0 +1,74 @@
+#wrap {
+	display: none;
+	opacity: 0.8;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 16px;
+	background-color: rgba(1, 1, 1, 0.725);
+	z-index: 100;
+	overflow: auto;
+}
+	
+#window {
+	width: 90%;
+	height: 80%;
+	margin: 50px auto;
+	display: none;
+	background: #fff;
+	z-index: 200;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 16px;
+	background-image: url(../images/ubuntu/debugger_background.jpg);
+	background-size: cover;
+}
+	
+.close{
+	float: left;
+	cursor: pointer;
+}
+
+.debug,
+.debug_output {
+	margin-top: 2%;
+	width: 43%;
+	height: 90%;
+}
+
+.debug {
+	float: left;
+	box-sizing: border-box;
+}
+
+.debug_output {
+	float: right;
+	box-sizing: border-box;
+}
+
+.debug textarea,
+.debug_output textarea {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.debug textarea {
+	background-image: url(../images/ubuntu/debug_background.png);
+}
+
+.debug_output textarea {
+	background-image: url(../images/ubuntu/debug_output_background.png);
+}
+
+.debug_toolbox {
+	width: 11%;
+	position: absolute;
+	top: 30%;
+	left: 44.5%;
+}

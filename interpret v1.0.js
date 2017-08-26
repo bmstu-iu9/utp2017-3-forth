@@ -167,7 +167,7 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
         case 'exit':
           index = retst.pop();
           break;
-	case 'var':
+	      case 'var':
           if ( isNumber(tok[index + 2] ) ) {
             values[ tok[index+1] ] = Number( tok[index+2] );
           } else {
@@ -176,7 +176,7 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
           index = index + 2;
           break;
         default:
-          if ( str in dict ) {
+          if (str in dict) {
             retst.push(index);
             index = dict[str];
           } else if (str in math) {
@@ -197,7 +197,7 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
 }
 
 document.getElementById('interB').onclick = (event) => {
-  var text = inputD.value;                 //получение текстов из полей ввода
+  var text = editor.getValue();                 //получение текстов из полей ввода
   var contentstack = inputS.value;
   
   var tokens = [];

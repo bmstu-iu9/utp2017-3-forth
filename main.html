@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>IU9 Forth Debugger</title>
+		<link href="styles/compiler.css" rel="stylesheet">
+		<link href="styles/debugger.css" rel="stylesheet">
+	</head>
+
+	<body class="ubuntu">
+		<!--Компилятор-->
+		<div class="toolbox clearfix">
+			<div class="toolbox1">
+				<div class="buttons">
+					<button title="Смена темы оформления" onclick="styles()"><img id="style" src="images/ubuntu/styles.png" alt="change style"></button>
+					<button title="Сохранить в файл"><img id="save_to_file" src="images/ubuntu/save_to_file.png" alt="save to file"></button>
+					<button title="Открыть файл"><img id="open_from_file" src="images/ubuntu/open_from_file.png" alt="open from file"></button>
+					<button title="Сохранить версию"><img id="save" src="images/ubuntu/save.png" alt="save"></button>
+					<button title="Предыдущая версия"><img id="back" src="images/ubuntu/back.png" alt="back"></button>
+					<button title="Следующая версия"><img id="forth" src="images/ubuntu/forth.png" alt="forth"></button>
+					<button title="Запуск"><img id="run" src="images/ubuntu/run.png" alt="run"></button>
+					<button title="Отладка" onclick="show('block')"><img id="debug" src="images/ubuntu/debug.png" alt="debug"></button>
+				</div>
+			</div>
+			<div class="toolbox2">
+				<div class="buttons">
+					<button title="Словарь переменных"><img id="dictionary" src="images/ubuntu/dictionary.png" alt="dictionary"></button>
+					<button title="Словарь функций"><img id="functions" src="images/ubuntu/functions.png" alt="functions"></button>
+				</div>
+			</div>
+		</div>
+		<div class="compiler clearfix">
+			<div class="input">
+				<textarea id="s_input">
+				</textarea>
+			</div>
+			<div class="dic_func">
+				<textarea id="s_dic_func" readonly>
+				</textarea>
+			</div>
+			<div class="stack">
+				<div class="default">
+					<textarea id="s_default">
+					</textarea>
+				</div>
+				<div class="output">
+					<textarea id="s_output" readonly>
+					</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="footer clearfix">
+			<div class="footer1">
+				<h3>О нас:</h3>
+				<div class="ps">
+					<p>
+						Сайт сделан студентами кафедры ИУ9 МГТУ им. Баумана
+					</p>
+					<p>
+						Группа IU9 Forth debugger
+					</p>
+				</div>
+			</div>
+			<div class="footer2">
+				<h3>Участники:</h3>
+				<div class="links">
+					<a href="https://github.com/TSARukyanGT" target="_blank">Геворг Царукян</a>
+					<br>
+					<a href="https://github.com/koshelevandrey" target="_blank">Андрей Кошелев</a>
+					<br>
+					<a href="https://github.com/IgorZobnev" target="_blank">Игорь Зобнев</a>
+					<br>
+					<a href="https://github.com/StructDeStruct" target="_blank">Владислав Мамедов</a>
+					<br>
+					<a href="https://github.com/opium-poppy" target="_blank">Екатерина Докучаева</a>
+					<br>
+					<a href="https://github.com/AnAirport" target="_blank">Анастасия Внукова</a>
+					<br>
+					<a href="https://github.com/KabudoWiseMan" target="_blank">Всеволод Молчанов</a>
+				</div>
+			</div>
+		</div>
+		<!--Отладчик-->
+		<div onclick="show('none')" id="wrap"></div>
+			<div id="window">
+				<div class="debug">
+					<textarea id="s_debug" readonly="">
+					</textarea>
+				</div>
+				<div class="debug_output">
+					<textarea id="s_debug_output" readonly>
+					</textarea>
+				</div>
+				<div class="debug_toolbox">
+					<div class="buttons">
+						<button title="Выполнить шаг"><img id="go" src="images/ubuntu/go.png" alt="go"></button>
+						<br>
+						<button title="Вернуться к редактированию" onclick="show('none')"><img id="exit" src="images/ubuntu/exit.png" alt="exit"></button>
+					</div>
+				</div>
+			</div>
+		<script type="text/javascript" src="scripts/debug.js"></script>
+		<script type="text/javascript" src="scripts/styles.js"></script>
+	</body>
+
+</html>
