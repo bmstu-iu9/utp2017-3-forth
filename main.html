@@ -3,33 +3,30 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Forth debugger</title>
+		<title>IU9 Forth Debugger</title>
 		<link href="styles/compiler.css" rel="stylesheet">
 		<link href="styles/debugger.css" rel="stylesheet">
 	</head>
 
-	<body class="white">
+	<body class="ubuntu">
 		<!--Компилятор-->
-		<!-- <div class="header">
-			<h1>IU9 Forth debugger</h1>
-		</div> -->
 		<div class="toolbox clearfix">
 			<div class="toolbox1">
 				<div class="buttons">
-					<button onclick="styles()"><img id="style" src="images/white/styles.png" alt="change style"></button>
-					<button><img id="save_to_file" src="images/white/save_to_file.png" alt="save to file"></button>
-					<button><img id="open_from_file" src="images/white/open_from_file.png" alt="open from file"></button>
-					<button><img id="save" src="images/white/save.png" alt="save"></button>
-					<button><img id="back" src="images/white/back.png" alt="back"></button>
-					<button><img id="forth" src="images/white/forth.png" alt="forth"></button>
-					<button><img id="run" src="images/white/run.png" alt="run"></button>
-					<button onclick="show('block')"><img id="debug" src="images/white/debug.png" alt="debug"></button>
+					<button title="Смена темы оформления" onclick="styles()"><img id="style" src="images/ubuntu/styles.png" alt="change style"></button>
+					<button title="Сохранить в файл"><img id="save_to_file" src="images/ubuntu/save_to_file.png" alt="save to file"></button>
+					<button title="Открыть файл"><img id="open_from_file" src="images/ubuntu/open_from_file.png" alt="open from file"></button>
+					<button title="Сохранить версию"><img id="save" src="images/ubuntu/save.png" alt="save"></button>
+					<button title="Предыдущая версия"><img id="back" src="images/ubuntu/back.png" alt="back"></button>
+					<button title="Следующая версия"><img id="forth" src="images/ubuntu/forth.png" alt="forth"></button>
+					<button title="Запуск"><img id="run" src="images/ubuntu/run.png" alt="run"></button>
+					<button title="Отладка" onclick="show('block')"><img id="debug" src="images/ubuntu/debug.png" alt="debug"></button>
 				</div>
 			</div>
 			<div class="toolbox2">
 				<div class="buttons">
-					<button><img id="dictionary" src="images/white/dictionary.png" alt="dictionary"></button>
-					<button><img id="functions" src="images/white/functions.png" alt="functions"></button>
+					<button title="Словарь переменных"><img id="dictionary" src="images/ubuntu/dictionary.png" alt="dictionary"></button>
+					<button title="Словарь функций"><img id="functions" src="images/ubuntu/functions.png" alt="functions"></button>
 				</div>
 			</div>
 		</div>
@@ -44,7 +41,7 @@
 			</div>
 			<div class="stack">
 				<div class="default">
-					<textarea id="s_default" readonly>
+					<textarea id="s_default">
 					</textarea>
 				</div>
 				<div class="output">
@@ -97,9 +94,9 @@
 				</div>
 				<div class="debug_toolbox">
 					<div class="buttons">
-						<button><img id="go" src="images/white/go.png" alt="go"></button>
+						<button title="Выполнить шаг"><img id="go" src="images/ubuntu/go.png" alt="go"></button>
 						<br>
-						<button onclick="show('none')"><img id="exit" src="images/white/exit.png" alt="exit"></button>
+						<button title="Вернуться к редактированию" onclick="show('none')"><img id="exit" src="images/ubuntu/exit.png" alt="exit"></button>
 					</div>
 				</div>
 			</div>
