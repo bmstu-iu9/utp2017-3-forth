@@ -6,6 +6,7 @@
 		<title>IU9 Forth Debugger</title>
 		<link href="styles/compiler.css" rel="stylesheet">
 		<link href="styles/debugger.css" rel="stylesheet">
+		<link id="buttons_style" href="styles/buttons.css" rel="stylesheet" disabled>
 	</head>
 
 	<body class="ubuntu">
@@ -27,8 +28,6 @@
 				<div class="buttons clearfix">
 					<button title="Словарь переменных"><img id="dictionary" src="images/ubuntu/dictionary.png" alt="dictionary"></button>
 					<button id="last2" title="Словарь функций"><img id="functions" src="images/ubuntu/functions.png" alt="functions"></button>
-					<div class="clearfix2">
-					</div>
 				</div>
 			</div>
 		</div>
@@ -86,12 +85,12 @@
 		<!--Отладчик-->
 		<div onclick="show('none')" id="wrap"></div>
 			<div id="window">
-				<div class="debug">
-					<textarea id="s_debug" readonly="">
+				<div class="debug" id="s_debug">
+					<textarea id="s_t_debug" readonly="">
 					</textarea>
 				</div>
-				<div class="debug_output">
-					<textarea id="s_debug_output" readonly>
+				<div class="debug_output" id="s_debug_output">
+					<textarea id="s_t_debug_output" readonly>
 					</textarea>
 				</div>
 				<div class="debug_toolbox">
