@@ -43,6 +43,7 @@ function styles() {
             document.getElementById('functions').src = 'images/literature/functions.png';
             document.getElementById('go').src = 'images/literature/go.png';
             document.getElementById('exit').src = 'images/literature/exit.png';
+            document.getElementById('buttons_style').removeAttribute('disabled');
         } else if(document.body.className == 'literature') {
             document.body.className = 'nature';
             document.body.style.backgroundImage = 'url(images/nature/background.jpg)';
@@ -65,6 +66,7 @@ function styles() {
             document.getElementById('functions').src = 'images/nature/functions.png';
             document.getElementById('go').src = 'images/nature/go.png';
             document.getElementById('exit').src = 'images/nature/exit.png';
+            document.getElementById('buttons_style').setAttribute('disabled', true);
         } else if(document.body.className == 'nature') {
             document.body.className = 'white';
             document.body.style.backgroundImage = 'url(images/white/background.jpg)';
@@ -87,6 +89,7 @@ function styles() {
             document.getElementById('functions').src = 'images/white/functions.png';
             document.getElementById('go').src = 'images/white/go.png';
             document.getElementById('exit').src = 'images/white/exit.png';
+            document.getElementById('buttons_style').removeAttribute('disabled');
         } else {
             document.body.className = 'ubuntu';
             document.body.style.backgroundImage = 'url(images/ubuntu/background.jpg)';
@@ -109,5 +112,6 @@ function styles() {
             document.getElementById('functions').src = 'images/ubuntu/functions.png';
             document.getElementById('go').src = 'images/ubuntu/go.png';
             document.getElementById('exit').src = 'images/ubuntu/exit.png';
+            document.getElementById('buttons_style').setAttribute('disabled', true);
         }
 }
