@@ -167,8 +167,13 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
         case 'exit':
           index = retst.pop();
           break;
-        case 'var':
-          values[tokens[index+1]] = tokens[index+2];
+	      case 'var':
+          if ( isNumber(tok[index + 2] ) ) {
+            values[ tok[index+1] ] = Number( tok[index+2] );
+          } else {
+            error = true;
+          }
+          index = index + 2;
           break;
         default:
           if (str in dict) {
