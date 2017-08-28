@@ -32,6 +32,20 @@ function findEndif( i, t ) {   //поиск завершения условия 
   return --i;
 }
 
+function findEndwhile( i, t ) {     //поиск конца цикла
+  var k = 1;
+  while ( k != 0 ) {
+    if ( t[i] == 'while' ) {
+      ++k;
+    }
+    if ( t[i] == 'endwhile' ) {
+      --k;
+    }
+    ++i;
+  }
+  return --i;
+}
+
 var tokens = [];
 var numbers = [];
 var stack = [];
@@ -257,6 +271,20 @@ document.getElementById('interB').onclick = (event) => {
               break;
             case 'endif':
               break;
+            case 'drop-all':
+              stack = [];
+              break;
+            case 'while':
+              x = stack.shift();
+              if ( x ) {
+                returnStack.push( index - 1 );
+              } else {
+                index = findEndwhile( index + 1, tokens );
+                nos = numbers[index];
+                x = stack.shift();
+              }
+              break;
+            case 'endwhile':
             case 'end':
             case 'exit':
               index = returnStack.pop();
