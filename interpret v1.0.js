@@ -167,10 +167,22 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
         case 'exit':
           index = retst.pop();
           break;
+	      case 'var':
+          if ( isNumber(tok[index + 2] ) ) {
+            values[ tok[index+1] ] = Number( tok[index+2] );
+          } else {
+            error = true;
+          }
+          index = index + 2;
+          break;
         default:
-          if ( str in dict ) {
+          if (str in dict) {
             retst.push(index);
             index = dict[str];
+          } else if (str in math) {
+	          st.unshift(math[str]);
+          } else if (str in values) {
+	          st.unshift(values[str]);
           } else {
             error = true;            //флаг, сигнализирующий об ошибочном вводе
           }
@@ -185,8 +197,8 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
 }
 
 document.getElementById('interB').onclick = (event) => {
-  var text = prompt('Введите текст программы', '');     //ввод текста программы
-  var contentstack = prompt('Введите начальное содержимое стека', '');//и стека
+  var text = editor.getValue();                 //получение текстов из полей ввода
+  var contentstack = inputS.value;
   
   var tokens = [];
   var stack = [];
@@ -196,6 +208,18 @@ document.getElementById('interB').onclick = (event) => {
   var start = false;
   text += ' ';
   contentstack += ' ';
+  var values = {};
+
+  var math = {};
+  math.E = 2.718;
+  math.Tau = 6.283;
+  math.Pi = 3.142;
+  math.Log2E = 1.443;
+  math.Log10E = 0.434;
+  math.Ln2 = 0.693;
+  math.Ln10 = 2.302;
+  math.Sqrt2 = 1.414;
+  math.Sqrt3 = 1.732;
   
   while (i < text.length) {               //разделение текста на токены (слова)
     if (text[i] != ' ' && text[i] != '\t' && text[i] != '\n') {
