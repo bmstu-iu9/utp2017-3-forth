@@ -32,6 +32,20 @@ function findEndif( i, t ) {   //поиск завершения условия 
   return --i;
 }
 
+function findEndwhile( i, t ) {     //поиск конца цикла
+  var k = 1;
+  while ( k != 0 ) {
+    if ( t[i] == 'while' ) {
+      ++k;
+    }
+    if ( t[i] == 'endwhile' ) {
+      --k;
+    }
+    ++i;
+  }
+  return --i;
+}
+
 function decoding( tok, index, st, retst, dict ) {     //запуск интерпретации
   var str;
   var x, y, z;
@@ -163,6 +177,19 @@ function decoding( tok, index, st, retst, dict ) {     //запуск интер
           break;
         case 'endif':
           break;
+	case 'drop-all':
+          st = [];
+          break;
+        case 'while':
+          x = st.shift();
+          if ( x ) {
+            retst.push( index - 1 );
+          } else {
+            index = findEndwhile( index + 1, tok ); 
+            x = st.shift();
+          }
+          break;
+        case 'endwhile':
         case 'end':
         case 'exit':
           index = retst.pop();
