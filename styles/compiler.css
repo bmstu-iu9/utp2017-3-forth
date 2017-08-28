@@ -1,73 +1,73 @@
 body {
-	background-image: url(../images/ubuntu/background.jpg);
-	background-size: 100%;
+  background-image: url(../images/ubuntu/background.jpg);
+  background-size: 100%;
 }
 
 .toolbox1 button {
-	float: left;
-	width: 9%;
-	margin-right: 4%;
+  float: left;
+  width: 9%;
+  margin-right: 4%;
 }
 
 #last1 {
-	margin-right: 0;
-	float: right;
+  margin-right: 0;
+  float: right;
 }
 
 .toolbox2 button {
-	width: 47%;
-	float: left;
+  width: 47%;
+  float: left;
 }
 
 #last2 {
-	float: right;
+  float: right;
 }
 
 .buttons img {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .toolbox1 {
-	float: left;
-	width: 60%;
-	box-sizing: border-box;
+  float: left;
+  width: 60%;
+  box-sizing: border-box;
 }
 
 .buttons {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .buttons button {
-	border: none;
-	padding: 0px;
-	background-color: transparent;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
 }
 
 .toolbox2 {
-	float: right;
-	width: 40%;
-	box-sizing: border-box;
+  float: right;
+  width: 40%;
+  box-sizing: border-box;
 }
 
 .toolbox2 .buttons {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 textarea {
-	border-radius: 5px;
-	/*border: 1px solid white;*/
-	border: none;
-	resize: none;
-	background-size: cover;
-	background-color: transparent;
-	outline: none;
-	box-sizing: border-box;
-	color: white;
+  border-radius: 5px;
+  /*border: 1px solid white;*/
+  border: none;
+  resize: none;
+  background-size: cover;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  color: white;
 }
 
 .input,
@@ -75,106 +75,106 @@ textarea {
 .stack,
 .default,
 .output {
-	background-size: cover;
-	border-radius: 5px;
-	border: none;
-	margin: 0.1%;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  border: none;
+  margin: 0.1%;
 }
 
 .default,
 .output {
-	margin: 0.2%;
-	width: 99.8%;
+  margin: 0.2%;
+  width: 99.8%;
 }
 
 .input {
-	background-image: url(../images/ubuntu/input_background.png);
-	width: 59.8%;
-	height: 365px;
-	float: left;
+  background-image: url(../images/ubuntu/input_background.png);
+  width: 59.8%;
+  height: 365px;
+  float: left;
 }
 
 .input textarea,
 .dic_func textarea {
-	width: 100%;
-	height: 96%;
+  width: 100%;
+  height: 96%;
 }
 
 .input textarea {
-	margin-top: 2%;
+  margin-top: 2%;
 }
 
 .dic_func {
-	background-image: url(../images/ubuntu/dic_func_background.png);
-	float: right;
-	width: 39.8%;
-	height: 572px;
+  background-image: url(../images/ubuntu/dic_func_background.png);
+  float: right;
+  width: 39.8%;
+  height: 572px;
 }
 
 .dic_func textarea {
-	margin-top: 4%;
+  margin-top: 4%;
 }
 
 .stack {
-	float: left;
-	width: 59.8%;
+  float: left;
+  width: 59.8%;
 }
 
 .stack textarea {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .default {
-	background-image: url(../images/ubuntu/default_background.png);
-	float: left;
-	height: 90px;
+  background-image: url(../images/ubuntu/default_background.png);
+  float: left;
+  height: 90px;
 }
 
 .output {
-	background-image: url(../images/ubuntu/output_background.png);
-	float: left;
-	height: 110px;
+  background-image: url(../images/ubuntu/output_background.png);
+  float: left;
+  height: 110px;
 }
 
 .footer {
-	border-radius: 5px;
-	color: white;
-	float: left;
-	background-color: black;
-	width: 100%;
+  border-radius: 5px;
+  color: white;
+  float: left;
+  background-color: black;
+  width: 100%;
 }
 
 .footer1 {
-	width: 65%;
-	float: left;
-	box-sizing: border-box;
+  width: 65%;
+  float: left;
+  box-sizing: border-box;
 }
 
 .footer2 {
-	width: 35%;
-	float: right;
-	box-sizing: border-box;
+  width: 35%;
+  float: right;
+  box-sizing: border-box;
 }
 
 .footer2 a {
-	color: white;
+  color: white;
 }
 
 h3 {
-	margin-left: 2%;
+  margin-left: 2%;
 }
 
 .ps {
-	margin-left: 5%;
+  margin-left: 5%;
 }
 
 .links {
-	margin-left: 10%;
+  margin-left: 10%;
 }
 
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
