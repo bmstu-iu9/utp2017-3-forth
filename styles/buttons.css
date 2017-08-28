@@ -1,0 +1,11 @@
+.buttons { 
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toolbox1 button {
+  float: left;
+  width: 11%;
+  margin-right: 1.7%;
+}

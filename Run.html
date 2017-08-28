@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Interpretator</title>
-      </head>
+  <style type="text/css" media="screen">
+    #editor { 
+      position: relative;
+      top: 5px;
+      right: 0;
+      bottom: 0;
+      left: 5px;
+      font-size: 14px;
+      width: 770px;
+      height: 400px;
+      margin-bottom: 14px;
+    }
+    #inputS {
+      position: relative;
+      top: 5px;
+      right: 0;
+      bottom: 0;
+      left: 5px;
+      font-size: 14px;
+      width: 770px;
+      height: 400px;
+      margin-bottom: 14px;
+    }
+    #inputD {
+      position: relative;
+      top: 5px;
+      right: 0;
+      bottom: 0;
+      left: 5px;
+      font-size: 14px;
+      width: 770px;
+      height: 400px;
+      margin-bottom: 14px;
+    }
+  </style>
+    </head>
   <body>
+    <div id="editor"></div> <!-- Поле ввода кода -->
     <button id="interB"> Run </button>
-    <textarea id="inputD"></textarea>
-    <textarea id="inputS"></textarea>
+    <div id="inputS"></div> <!-- Поле ввода стека -->
+    <div id="inputD"></div> <!-- Поле для отладчика -->
     <script src="interpret v1.0.js"></script>
+    <script src="ace.js"></script>
+    <script>
+      var editor = ace.edit("editor");
+      editor.getSession().setMode("ace/mode/forth");
+      var inputS = ace.edit("inputS");
+      inputS.getSession().setMode("ace/mode/forth");
+      var inputD = ace.edit("inputD");
+      inputD.getSession().setMode("ace/mode/forth");
+      inputD.setReadOnly(true);
+    </script>
   </body>
 </html>
