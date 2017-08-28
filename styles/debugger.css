@@ -1,88 +1,88 @@
 #wrap {
-	display: none;
-	opacity: 0.8;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	padding: 16px;
-	background-color: rgba(1, 1, 1, 0.725);
-	z-index: 100;
-	overflow: auto;
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  background-color: rgba(1, 1, 1, 0.725);
+  z-index: 100;
+  overflow: auto;
 }
-	
+  
 #window {
-	width: 90%;
-	height: 80%;
-	margin: 50px auto;
-	display: none;
-	background: #fff;
-	z-index: 200;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	padding: 16px;
-	background-image: url(../images/ubuntu/debugger_background.jpg);
-	background-size: cover;
+  width: 90%;
+  height: 80%;
+  margin: 50px auto;
+  display: none;
+  background: #fff;
+  z-index: 200;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  background-image: url(../images/ubuntu/debugger_background.jpg);
+  background-size: cover;
 }
-	
+  
 .close{
-	float: left;
-	cursor: pointer;
+  float: left;
+  cursor: pointer;
 }
 
 .debug,
 .debug_output {
-	margin-top: 2%;
-	height: 90%;
+  margin-top: 2%;
+  height: 90%;
 }
 
 .debug {
-	float: left;
-	box-sizing: border-box;
-	width: 50%;
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
 }
 
 .debug_output {
-	float: right;
-	box-sizing: border-box;
-	width: 40%;
+  float: right;
+  box-sizing: border-box;
+  width: 40%;
 }
 
 .debug textarea,
 .debug_output textarea {
-	width: 100%;
-	height: 96%;
-	box-sizing: border-box;
+  width: 100%;
+  height: 96%;
+  box-sizing: border-box;
 }
 
 .debug textarea {
-	margin-top: 3%;
+  margin-top: 3%;
 }
 
 .debug_output textarea {
-	margin-top: 4%;
+  margin-top: 4%;
 }
 
 .debug,
 .debug_output {
-	background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .debug {
-	background-image: url(../images/ubuntu/debug_background.png);
+  background-image: url(../images/ubuntu/debug_background.png);
 }
 
 .debug_output {
-	background-image: url(../images/ubuntu/debug_output_background.png);
+  background-image: url(../images/ubuntu/debug_output_background.png);
 }
 
 .debug_toolbox {
-	width: 9.7%;
-	position: absolute;
-	top: 30%;
-	left: 50%;
+  width: 9.7%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
 }
