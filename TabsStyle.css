@@ -1,0 +1,7 @@
+#tabs
+{font-size:0.8em;
+    width:350px;
+    height:350px;
+    overflow: auto;
+    white-space: nowrap;
+}
