@@ -1,6 +1,6 @@
 var create_bp = function(cell, number) {
   var bp = document.createElement("img");
-  bp.src = "breakpoint.png";
+  bp.src = "images/break_point.png";
   bp.className = "break_point";
   window.bp_value = number;
   if(number < 10) {
@@ -12,7 +12,6 @@ var create_bp = function(cell, number) {
   }
   cell.appendChild(bp);
 };
-
 
 var find_number = function(cell) {
   var number = "";
