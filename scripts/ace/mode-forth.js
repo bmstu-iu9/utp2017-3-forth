@@ -60,7 +60,7 @@ var ForthHighlightRules = function() {
 
     var keywordControls = (
         "drop|drop-all|swap|dup|over|rot|depth|define|end|exit|" +
-        "if|endif|while|endwhile"
+        "if|endif|while|endwhile|var"
     );
 
     var keywordOperators = (
