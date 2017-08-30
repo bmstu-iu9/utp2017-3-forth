@@ -1,0 +1,45 @@
+#editor {
+	margin-top: 55px;
+	margin-left: 10.7%;
+	width: 78.3%;
+	height: 70%;
+}
+
+.dic_func textarea {
+	margin-top: 60px;
+	margin-left: 12.5%;
+	width: 75.5%;
+	height: 79%;
+}
+
+#inputS {
+	margin-top: 15px;
+	margin-left: 12%;
+	width: 74.7%;
+	height: 63%;
+}
+
+.output textarea {
+	margin-top: 25px;
+	margin-left: 10%;
+	width: 69%;
+	height: 62.7%;
+}
+
+.debug_output textarea {
+	margin-top: 97px;
+	margin-left: 16%;
+	width: 60%;
+	height: 63%;
+}
+
+#inputD {
+	margin-top: 97px;
+	margin-left: 24%;
+	width: 60.5%;
+	height: 61%;
+}
+
+textarea {
+	color: #b7551d;
+}

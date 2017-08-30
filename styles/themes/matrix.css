@@ -1,0 +1,11 @@
+#editor,
+.dic_func textarea,
+.debug_output textarea,
+#inputD {
+	margin-top: 0;
+	height: 100%;
+}
+
+textarea {
+	color: #00ff00;
+}
