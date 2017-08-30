@@ -45,7 +45,7 @@ var outputString2='Базовые функции:\n' + '\n' + 'define..end\n' + 
     'if..endif\n' + 'while..endwhile\n' + 'var\n' + 'drop\n' + 'drop-all\n' +
     'swap\n' + 'dup\n' + 'over\n' + 'depth\n' + 'rot\n' + 'and\n' + 'or\n' +
     'not\n' + '=\n' + '>\n' + '<\n' + '+\n' + '-\n' + '*\n' +
-    '/\n' + 'mod\n' + 'neg\n';
+    '/\n' + 'div\n' + 'mod\n' + 'neg\n';
 if (maxTextLen2<dic_func_output.cols) maxTextLen2=dic_func_output.cols;
 for (var i=maxTextLen2;i>0;i--) {
     outputString2+='_';
