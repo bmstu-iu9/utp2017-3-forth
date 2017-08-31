@@ -198,7 +198,7 @@ Sqrt2 Sqrt3 +
 ---
 ---
 
-### and, or, not, var
+### and, or, not, var, exit
 
 10 0 and  
 -1 5 and  
@@ -236,6 +236,20 @@ var x 6
 ()  
 
 (6, 5)  
+
+---
+
+define func  
+dup 0 =  
+if -1 exit endif  
+1  
+end  
+0 func  
+3 func  
+
+(4)  
+
+(1, 3, -1, 0, 4)  
 
 ---
 ---
