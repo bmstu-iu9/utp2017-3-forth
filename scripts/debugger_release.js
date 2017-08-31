@@ -131,7 +131,7 @@ document.getElementById('last1').onclick = (event) => {
         start = false;
       }
       i += 2;
-      while (i < text.length && text[i] != '/' && text[i-1] == '*') {
+      while (i < text.length && (text[i] != '/' || text[i-1] != '*')) {
         ++i;
       }
     } else if ( i+1 < text.length && text[i] == '/' && text[i+1] == '/') {
