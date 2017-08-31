@@ -93,7 +93,7 @@ document.getElementById('last1').onclick = (event) => {
   document.getElementById('window').style.display = 'block';
   document.getElementById('wrap').style.display = 'block';
   if (window.bp_value) breakpoint = Number(window.bp_value);
-  inputD.setValue() = editor.getValue();
+  inputD.setValue(editor.getValue());
   var cells = document.getElementById("inputD").getElementsByClassName("ace_gutter-cell");
   for(var i = 0; i < cells.length; i++) {
     cell = cells[i];
