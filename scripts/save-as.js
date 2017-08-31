@@ -11,7 +11,7 @@ function toString(stack) {
    for (var i in stack) {
      s += stack[i] + ' ';
    }
-   if (s != '') s += '\r\n\r\n'; else s += '\r\n';
+   if (s != '') s += '\r\n\r\n';
    return s;
 }
  
