@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>OutputTest</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        textarea {
+            resize: none; /* Убираем уголок ресайза */
+        }
+    </style>
 </head>
 <body>
 <form>
-    <p><input type="button" id="variablesButton" value=" Переменные " style="background: #FFFFFF">
-        <input type="button" id="functionsButton" value=" Функции " style="background: #FFFFFF"></p>
+    <p><input type="button" id="variablesButton" value=" Переменные " >
+        <input type="button" id="functionsButton" value=" Функции " ></p>
 </form>
-<textarea id="output" rows="15" cols="45" readonly  wrap="off"></textarea>
+<textarea id="dic_func_output" rows="15" cols="45" readonly  wrap="off"></textarea>
 <script src="getOutput.js"></script>
 </body>
 </html>

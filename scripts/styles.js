@@ -81,9 +81,9 @@ function styles() {
 		document.getElementById('buttons_style').setAttribute('disabled', true);
 		document.getElementById('literature_s').setAttribute('disabled', true);
 		document.getElementById('nature_s').removeAttribute('disabled');
-		editor.setTheme("ace/theme/natural");
-		inputS.setTheme("ace/theme/natural");
-		inputD.setTheme("ace/theme/Dnatural");
+		editor.setTheme("ace/theme/nature");
+		inputS.setTheme("ace/theme/nature");
+		inputD.setTheme("ace/theme/Dnature");
 	} else if(document.body.className == 'nature') {
 		document.body.className = 'white';
 		document.body.style.backgroundImage = 'url(images/white/background.jpg)';
