@@ -600,7 +600,7 @@ document.getElementById('last1').onclick = (event) => {
                   case 'div':
                     x = stack.shift();
                     y = stack.shift();
-                    z = Math.round( y / x );
+                    z = Math.round((y / x) - 0.5);
                     stack.unshift(z);
                     break;
                   case 'mod':
