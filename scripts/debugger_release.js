@@ -356,6 +356,14 @@ document.getElementById('last1').onclick = (event) => {
                   index = returnStack.pop();
                   nos = numbers[index];
                   break;
+                case 'var':
+                  if ( isNumber(tokens[index + 2] ) ) {
+                    values[ tokens[index+1] ] = Number( tokens[index+2] );
+                  } else {
+                    error = true;
+                  }
+                  index = index + 2;
+                  break;
                 default:
                   if (str in dictionary) {
                     returnStack.push(index);
@@ -529,6 +537,14 @@ document.getElementById('last1').onclick = (event) => {
               case 'exit':
                 index = returnStack.pop();
                 nos = numbers[index];
+                break;
+              case 'var':
+                if ( isNumber(tokens[index + 2] ) ) {
+                  values[ tokens[index+1] ] = Number( tokens[index+2] );
+                } else {
+                  error = true;
+                }
+                index = index + 2;
                 break;
               default:
                 if (str in dictionary) {
