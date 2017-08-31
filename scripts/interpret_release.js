@@ -351,6 +351,14 @@ function decoding( tokens, index, stack, returnStack, dictionary ) {
         case 'exit':
           index = returnStack.pop();
           break;
+        case 'var':
+          if ( isNumber(tokens[index + 2] ) ) {
+            values[ tokens[index+1] ] = Number( tokens[index+2] );
+          } else {
+            error = true;
+          }
+          index = index + 2;
+          break;
         default:
           if (str in dictionary) {
             returnStack.push(index);
