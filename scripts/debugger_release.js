@@ -370,9 +370,9 @@ document.getElementById('last1').onclick = (event) => {
                     index = dictionary[str];
                     nos = numbers[index+1] - 1;
                   } else if ( str in math ) {
-                    st.unshift(math[str]);
+                    stack.unshift(math[str]);
                   } else if ( str in values ) {
-                    st.unshift(values[str]);
+                    stack.unshift(values[str]);
                   } else {
                     error = true;
                   }
@@ -552,9 +552,9 @@ document.getElementById('last1').onclick = (event) => {
                   index = dictionary[str];
                   nos = numbers[index+1] - 1;
                 } else if ( str in math ) {
-                  st.unshift(math[str]);
+                  stack.unshift(math[str]);
                 } else if ( str in values ) {
-                  st.unshift(values[str]);
+                  stack.unshift(values[str]);
                 } else {
                   error = true;
                 }
@@ -745,9 +745,9 @@ document.getElementById('last1').onclick = (event) => {
                       index = dictionary[str];
                       nos = numbers[index+1] - 1;
                     } else if ( str in math ) {
-                      st.unshift(math[str]);
+                      stack.unshift(math[str]);
                     } else if ( str in values ) {
-                      st.unshift(values[str]);
+                      stack.unshift(values[str]);
                     } else {
                       error = true;
                     }
