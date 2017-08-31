@@ -67,7 +67,7 @@ textarea {
   box-sizing: border-box;
   color: #bfc5d1;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 button {
@@ -191,6 +191,7 @@ h3 {
 #inputD {
   border-radius: 5px;
   border: none;
+  font-size: 17px
 }
 
 #editor {
