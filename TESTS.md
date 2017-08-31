@@ -232,6 +232,7 @@ Sqrt2 Sqrt3 +
 var x 5  
 x  
 var x 6  
+x
 
 ()  
 
