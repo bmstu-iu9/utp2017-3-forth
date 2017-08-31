@@ -36,6 +36,9 @@ var bp_scroll = function(state) {
 };
 
 var bp_put = function(state) {
+  if (window.bp_value && Number(window.bp_value) > editor.session.getLength()) {
+    window.bp_value = undefined;
+  }
   var cells = document.getElementById(state).getElementsByClassName("ace_gutter-cell"); 
   for(var i = 0; i < cells.length; i++) {
     cell = cells[i];
