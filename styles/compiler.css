@@ -19,7 +19,7 @@ body {
   float: left;
 }
 
-#last2 {
+#functionsButton {
   float: right;
 }
 
@@ -59,15 +59,19 @@ body {
 }
 
 textarea {
-  border-radius: 5px;
-  /*border: 1px solid white;*/
   border: none;
   resize: none;
   background-size: cover;
   background-color: transparent;
   outline: none;
   box-sizing: border-box;
-  color: white;
+  color: #bfc5d1;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  outline: none;
 }
 
 .input,
@@ -78,13 +82,11 @@ textarea {
   background-size: 100% 100%;
   border-radius: 5px;
   border: none;
-  margin: 0.1%;
 }
 
 .default,
 .output {
-  margin: 0.2%;
-  width: 99.8%;
+  width: 100%;
 }
 
 .input {
@@ -92,6 +94,7 @@ textarea {
   width: 59.8%;
   height: 365px;
   float: left;
+  margin-right: 0.1%;
 }
 
 .input textarea,
@@ -112,12 +115,14 @@ textarea {
 }
 
 .dic_func textarea {
-  margin-top: 4%;
+  margin-top: 21px;
+  height: 96.3%;
 }
 
 .stack {
   float: left;
   width: 59.8%;
+  margin-top: 5px;
 }
 
 .stack textarea {
@@ -134,7 +139,8 @@ textarea {
 .output {
   background-image: url(../images/ubuntu/output_background.png);
   float: left;
-  height: 110px;
+  height: 108px;
+  margin-top: 4px;
 }
 
 .footer {
@@ -143,6 +149,7 @@ textarea {
   float: left;
   background-color: black;
   width: 100%;
+  margin-top: 0.5%;
 }
 
 .footer1 {
@@ -177,4 +184,24 @@ h3 {
   content: "";
   display: table;
   clear: both;
+}
+
+#editor,
+#inputS,
+#inputD {
+  border-radius: 5px;
+  border: none;
+}
+
+#editor {
+  margin-top: 17px;
+  height: 95.28%;
+}
+
+#inputS {
+  height: 100%;
+}
+
+.break_point { 
+  position: relative;
 }
