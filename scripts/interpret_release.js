@@ -197,7 +197,6 @@ document.getElementById('runButton').onclick = (event) => {
     }
     ++i;
   }
-  console.log(tokens);
   if (!startException) {
     stack = decoding(tokens, 0, stack, [], dictionary);
     resultOutput.value += toString(stack);
