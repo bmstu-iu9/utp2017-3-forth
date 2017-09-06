@@ -96,7 +96,7 @@ math.Sqrt2 = 1.414;
 math.Sqrt3 = 1.732;
 var values = {};
 var dictionary = {};
-
+var dict_flag = true;
 var variablesString=getOutputString(values);
 var outputString1='Константы:\n' + '\n' +
     'E = 2.718\n' + 'Tau = 6.283\n' + 'Pi = 3.142\n' +
@@ -125,6 +125,7 @@ document.getElementById('runButton').onclick = (event) => {
   var contentstack = inputS.getValue();
   var tokens = [];
   var stack = [];
+  values = {};
   dictionary = {};
   var i = 0;
   var str = '';
@@ -377,6 +378,13 @@ function decoding( tokens, index, stack, returnStack, dictionary ) {
     ++index;
   }
   if ( error ) resultOutput.value += 'Unexpected element:  ' + str + '\n';//сообщение об ошибке
+  if (dict_flag) {
+    variablesString=getOutputString(values);
+    document.getElementById('dic_func_output').value= outputString1 + variablesString;
+  } else {
+    functionsString=getOutputStringForFuncs(dictionary);
+    document.getElementById('dic_func_output').value= outputString2 + functionsString;
+  }
   return stack;
 };
 ///////////////////далее функции для вывода словарей
@@ -384,10 +392,12 @@ function decoding( tokens, index, stack, returnStack, dictionary ) {
 document.getElementById('dic_func_output').value= outputString1 + variablesString;
 
 document.getElementById('variablesButton').onclick = function() {
+  dict_flag = true;
   variablesString=getOutputString(values);
   document.getElementById('dic_func_output').value= outputString1 + variablesString;
 };
 document.getElementById('functionsButton').onclick = function() {
+  dict_flag = false;
   functionsString=getOutputStringForFuncs(dictionary);
   document.getElementById('dic_func_output').value= outputString2 + functionsString;
 };
